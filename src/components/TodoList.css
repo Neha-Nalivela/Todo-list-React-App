@@ -1,0 +1,26 @@
+.data1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin: 6px auto;
+  width: 90%;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.delete-btn {
+  font-size: 20px;           /* Adjust button/icon size */
+  padding: 4px 10px;         /* Space around the icon */
+  background-color: #ff4d4f; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e; /* Darker red on hover */
+}
