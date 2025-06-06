@@ -1,26 +1,31 @@
+ul {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
 .data1 {
+  background-color: #eef1f5;
+  border: 1px solid #ccc;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
-  margin: 6px auto;
-  width: 90%;
-  background-color: #f1f1f1;
-  border-radius: 6px;
-  font-size: 16px;
 }
 
-.delete-btn {
-  font-size: 20px;           /* Adjust button/icon size */
-  padding: 4px 10px;         /* Space around the icon */
-  background-color: #ff4d4f; /* Red background */
-  color: white;
+.data1 button {
+  background: none;
   border: none;
-  border-radius: 5px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.delete-btn:hover {
-  background-color: #d9363e; /* Darker red on hover */
 }

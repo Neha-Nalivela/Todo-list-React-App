@@ -1,41 +1,44 @@
-/* TodoForm.css */
-
 form {
-  width: 450px;            /* set a fixed width */
-  margin: 30px auto;       /* center horizontally with some top margin */
-  padding: 30px;           /* space inside the box */
-  border: 2px solid #84a6ca;  /* blue border */
-  border-radius: 10px;     /* rounded corners */
-  box-shadow: 0 4px 8px rgba(107, 112, 64, 0.1); /* subtle shadow */
-  background-color: #f8fdde; /* light background */
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #f2b2b2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .data {
   display: flex;
   flex-direction: column;
-  gap: 1px; /* spacing between input and button */
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(220, 238, 147);
 }
 
 input {
   padding: 10px;
-  font-size: 16px;
-  background-color: #e0ccac;
-  border: 1px solid #bb9965;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
 }
 
 button {
   padding: 10px;
-  font-size: 16px;
-  background-color: #3b80d5;
+  background-color: #5b8db8;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3a6d98;
 }
 
 button:disabled {
-  background-color: #cecdcd;
+  background-color: #ccc;
   cursor: not-allowed;
-  color: black;
 }

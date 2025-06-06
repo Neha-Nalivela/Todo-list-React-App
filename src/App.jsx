@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <TodoForm onAddTask={(task) => setTasks([...tasks, task])} />
       <TodoList tasks={tasks} setTasks={setTasks} />
+      <Footer/>
     </div>
   );
 }

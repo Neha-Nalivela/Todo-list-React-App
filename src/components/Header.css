@@ -1,21 +1,13 @@
-/* src/components/Header.css */
 .home {
-  background-color: #b6b092; /* light grey background */
+  background-color: #84a6ca;
+  color: white;
   padding: 20px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: #7d3030;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position:sticky;
 }
 
 .home h1 {
-  margin: 0 0 10px;
-  color: #444;
+  margin: 0;
   font-size: 2rem;
-}
-
-hr {
-  margin-top: 15px;
-  border: none;
-  height: 1px;
-  background-color: #ccc;
 }
