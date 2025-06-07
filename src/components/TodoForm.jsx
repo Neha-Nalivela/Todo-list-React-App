@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./TodoForm.css";
-
+import { API_URL } from '../App';
 export default function TodoForm({ onAddTask }) {
   const [taskValue, setTaskValue] = useState('');
 
@@ -15,7 +15,8 @@ export default function TodoForm({ onAddTask }) {
     };
 
     try {
-      const res = await axios.post('http://localhost:8080/tasks/new', task);
+      //const res = await axios.post('http://localhost:8080/tasks/new', task);
+      const res = await axios.post(`${API_URL}/tasks/new`, task);
       onAddTask(res.data);
       setTaskValue('');
     } catch (err) {

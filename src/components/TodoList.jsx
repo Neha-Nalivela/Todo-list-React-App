@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import './TodoList.css';
+import { API_URL } from '../App'; // Correct import from config.js
+
 export default function TodoList({ tasks, setTasks }) {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/tasks/');
+        const res = await axios.get(`${API_URL}/tasks/all`);
         setTasks(res.data);
       } catch (err) {
         console.error('Error fetching tasks:', err);
@@ -17,7 +19,7 @@ export default function TodoList({ tasks, setTasks }) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/tasks/${id}`);
+      await axios.delete(`${API_URL}/tasks/${id}`);
       setTasks(tasks.filter((task) => task._id !== id));
     } catch (err) {
       console.error('Error deleting task:', err);
